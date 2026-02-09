@@ -9291,21 +9291,22 @@ h1, h2, h3, h4, h5,
   margin-bottom: 20px;
   z-index: 99;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .slider-text .breadcrumbs span {
-  color: #3e64ff;
+  color: rgba(0, 0, 0, 0.8);
 }
 .slider-text .breadcrumbs span i {
   color: rgba(0, 0, 0, 0.8);
 }
 .slider-text .breadcrumbs span a {
-  color: rgba(0, 0, 0, 0.8);
+  color: #3e64ff;
 }
 .slider-text .breadcrumbs span a:hover, .slider-text .breadcrumbs span a:focus {
   color: #3e64ff;
 }
 .slider-text .breadcrumbs span a:hover i, .slider-text .breadcrumbs span a:focus i {
-  color: rgba(0, 0, 0, 0.8);
+  color: #3e64ff;
 }
 .slider-text .bread {
   font-weight: 700;
@@ -9395,6 +9396,7 @@ h1, h2, h3, h4, h5,
   border-radius: 40px;
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   font-size: 12px;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
 }
@@ -10254,7 +10256,6 @@ textarea.form-control {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 600;
-  margin-top: -15px;
 }
 .blog-entry .meta span {
   color: #3e64ff;
@@ -10399,9 +10400,6 @@ textarea.form-control {
 .block-21 .text .heading a:hover, .block-21 .text .heading a:active, .block-21 .text .heading a:focus {
   color: #3e64ff;
 }
-.block-21 .text .meta {
-  margin-top: -15px;
-}
 .block-21 .text .meta > div {
   display: inline-block;
   margin-right: 5px;
@@ -10431,17 +10429,18 @@ textarea.form-control {
   opacity: 0.5;
 }
 
-.keywords a {
+.tagcloud a {
+  text-transform: uppercase;
   display: inline-block;
   padding: 4px 10px;
   margin-bottom: 7px;
   margin-right: 4px;
   border-radius: 4px;
-  color: black;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 11px;
 }
-.keywords a:hover {
+.tagcloud a:hover {
   border: 1px solid #000;
 }
 
@@ -10537,95 +10536,37 @@ textarea.form-control {
   font-size: 20px;
 }
 
-.certification table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
+.categories, .sidelink {
+  padding: 0;
+  margin: 0;
 }
-.certification th, .certification td {
-  padding: 16px 28px;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px solid #e5e5e5;
-  color: black;
+.categories li, .sidelink li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  list-style: none;
 }
-.certification th {
-  font-weight: 600;
+.categories li:last-child, .sidelink li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
-.certification th:nth-child(1), .certification td:nth-child(1) {
-  width: 24%;
+.categories li a, .sidelink li a {
+  display: block;
+  color: #000000;
 }
-.certification th:nth-child(2), .certification td:nth-child(2) {
-  width: 38%;
-}
-.certification th:nth-child(3), .certification td:nth-child(3) {
-  width: 38%;
-}
-
-.languagecertification table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-.languagecertification th, .languagecertification td {
-  padding: 16px 24px;
-  text-align: left;
-  border-bottom: 1px solid #e5e5e5;
-  color: black;
-}
-.languagecertification th {
-  font-weight: 600;
-}
-.languagecertification th:nth-child(1), .languagecertification td:nth-child(1) {
-  width: 18%;
-}
-.languagecertification th:nth-child(2), .languagecertification td:nth-child(2) {
-  width: 18%;
-}
-.languagecertification th:nth-child(3), .languagecertification td:nth-child(3) {
-  width: 18%;
-}
-.languagecertification th:nth-child(4), .languagecertification td:nth-child(4) {
-  width: 18%;
-}
-.languagecertification th:nth-child(5), .languagecertification td:nth-child(5) {
-  width: 28%;
-}
-
-.license table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-.license th, .license td {
-  padding: 16px 24px;
-  text-align: left;
-  border-bottom: 1px solid #e5e5e5;
-  color: black;
-}
-.license th {
-  font-weight: 600;
-}
-.license th:nth-child(1), .license td:nth-child(1) {
-  width: 17%;
-}
-.license th:nth-child(2), .license td:nth-child(2) {
-  width: 17%;
-}
-.license th:nth-child(3), .license td:nth-child(3) {
-  width: 26%;
-}
-.license th:nth-child(4), .license td:nth-child(4) {
-  width: 20%;
-}
-.license th:nth-child(5), .license td:nth-child(5) {
-  width: 20%;
-}
-
-.sub-title-blue {
-  margin-top: 10px;
-  margin-bottom: 8px;
+.categories li a span, .sidelink li a span {
+  position: absolute;
+  right: 0;
+  top: 0;
   color: #3e64ff;
+}
+.categories li a:hover, .categories li a:focus, .sidelink li a:hover, .sidelink li a:focus {
+  color: #3e64ff;
+}
+.categories li.active a, .sidelink li.active a {
+  color: #000000;
+  font-style: italic;
 }
 
 #ftco-loader {
