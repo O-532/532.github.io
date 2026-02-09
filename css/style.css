@@ -9549,6 +9549,21 @@ h1, h2, h3, h4, h5,
   margin-bottom: 30px;
   color: #3e64ff;
 }
+.page .headingsub {
+  font-weight: 800;
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #3e64ff;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.page .headingsubsub {
+  font-weight: 800;
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: #3e64ff;
+  margin-left: 40px;
+}
 
 .resume-wrap {
   width: 100%;
@@ -10541,6 +10556,8 @@ textarea.form-control {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  margin-top: -10px;
+  margin-left: 20px;
 }
 .certification th, .certification td {
   padding: 16px 28px;
@@ -10566,6 +10583,8 @@ textarea.form-control {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  margin-top: -10px;
+  margin-left: 20px;
 }
 .languagecertification th, .languagecertification td {
   padding: 16px 24px;
@@ -10596,6 +10615,8 @@ textarea.form-control {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  margin-top: -5px;
+  margin-left: 40px;
 }
 .license th, .license td {
   padding: 16px 24px;

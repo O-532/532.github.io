@@ -734,6 +734,21 @@ h1, h2, h3, h4, h5,
 		margin-bottom: 30px;
 		color: $primary;
 	}
+	.headingsub{
+		font-weight: 800;
+		font-size: 27px;
+		margin-bottom: 10px;
+		color: $primary;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.headingsubsub{
+		font-weight: 800;
+		font-size: 21px;
+		margin-bottom: 10px;
+		color: $primary;
+		margin-left: 40px;
+	}
 }
 
 
@@ -1853,6 +1868,8 @@ textarea.form-control {
 	  width: 100%;
 	  border-collapse: collapse;
 	  table-layout: fixed;
+	  margin-top: -10px;
+	  margin-left: 20px;
 	}
   
 	th, td {
@@ -1873,9 +1890,11 @@ textarea.form-control {
   //languagecertification
   .languagecertification {
 	table {
-	  width: 100%;
-	  border-collapse: collapse;
-	  table-layout: fixed;
+		width: 100%;
+		border-collapse: collapse;
+		table-layout: fixed;
+		margin-top: -10px;
+		margin-left: 20px;
 	}
   
 	th, td {
@@ -1900,6 +1919,8 @@ textarea.form-control {
 	  width:100%;
 	  border-collapse:collapse;
 	  table-layout:fixed;
+	  margin-top: -5px;
+	  margin-left: 40px;
 	}
   
 	th, td {
