@@ -387,7 +387,7 @@ window.onload = function() {
   })
   $(window).scroll(function(e){
     // scrollTop retains the value of the scroll top with the reference at the middle of the page
-    var scrollTop = $(this).scrollTop() + ($(window).height()/2);
+    var scrollTop = $(this).scrollTop() + ($(window).height()/2.7);
     //cycle through the values in sections array
     for (var i in sections) {
       var section = sections[i];
