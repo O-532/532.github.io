@@ -7,8 +7,8 @@ $white: #fff;
 $black: #000000;
 $darken: #232931;
 
-$primary: #3e64ff;
-$secondary: #a0f669;
+$primary: #cc80ff;
+$secondary: #ffff94;
 
 
 
@@ -410,6 +410,8 @@ h1, h2, h3, h4, h5,
 		margin-bottom: 20px;
 		z-index: 99;
 		font-weight: 600;
+		margin-top: -60px;
+		margin-bottom: -50px;
 		span{
 			color: $primary;
 			i{
@@ -428,8 +430,21 @@ h1, h2, h3, h4, h5,
 	}
 	.bread{
 		font-weight: 700;
+		color: $primary;
+		font-size: 70px;
+		margin-top: 50px;
+	}
+	.breadsub{
+		font-weight: 400;
 		color: $black;
-		font-size: 60px;
+		font-size: 35px;
+		margin-top: -10px;
+	}
+	.breadsubsub{
+		font-weight: 300;
+		color: rgba(0,0,0,.8);
+		font-size: 20px;
+		margin-top: -20px;
 	}
 }
 
@@ -702,7 +717,7 @@ h1, h2, h3, h4, h5,
   	list-style: none;
   	margin-bottom: 10px;
   	a{
-  		color: $black;
+  		color: $black; 
   		&.current {
 			  // border-bottom: 4px solid $primary;
 			  color: $primary;
@@ -720,7 +735,7 @@ h1, h2, h3, h4, h5,
 			  }
 			}
   	}
-  }
+  }  
 }
 .page{
 	width: 100%;
@@ -730,13 +745,19 @@ h1, h2, h3, h4, h5,
 	}
 	.heading{
 		font-weight: 800;
-		font-size: 30px;
+		font-size: 55px;
+		margin-bottom: -80px;
+		color: $primary;
+	}
+	.heading2{
+		font-weight: 800;
+		font-size: 45px;
 		margin-bottom: 30px;
 		color: $primary;
 	}
 	.headingsub{
 		font-weight: 800;
-		font-size: 27px;
+		font-size: 40px;
 		margin-bottom: 10px;
 		color: $primary;
 		margin-top: 10px;
@@ -744,10 +765,23 @@ h1, h2, h3, h4, h5,
 	}
 	.headingsubsub{
 		font-weight: 800;
-		font-size: 21px;
+		font-size: 35px;
 		margin-bottom: 10px;
 		color: $primary;
 		margin-left: 40px;
+	}
+	.headingsubsubsub{
+		font-weight: 800;
+		font-size: 27px;
+		margin-bottom: 10px;
+		color: $primary;
+		margin-left: 40px;
+	}
+	.headingproject{
+		font-weight: 800;
+		font-size: 55px;
+		margin-bottom: 30px;
+		color: $primary;
 	}
 }
 
@@ -1221,18 +1255,27 @@ textarea.form-control {
 		h2 {
 			font-weight: normal;
 			color: $white;
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 			font-size: 22px;
 			font-weight: 600;
+			margin-left: 50px;
 		}
 		ul{
+			margin-left:20px;
 			li{
 				margin-bottom: 10px;
+				margin-left: 50px;
 				a{
 					color: rgba(255,255,255,.6);
+					&:hover, &:active, &:focus {
+						color: $primary;
+					}
 					span{
 						// color: $white;
 						color: rgba(255,255,255,.6);
+						&:hover, &:active, &:focus {
+							color: $primary;
+						}
 					}
 				}
 			}
@@ -1358,23 +1401,24 @@ textarea.form-control {
 		color: rgba(0,0,0,1);
 		letter-spacing: 3px;
 	}
-	h1.big{
-		position: absolute;
+	h1.big{		
 		top: 0px;
 		left: 0;
-		font-size: 7vw;
-		color: rgba(255,255,255,.1);
+		font-size: 55px;
+		color:$primary;
 		z-index: -1;
-		font-weight: 900;
+		font-weight: 700;
 		&.big-2{
 			right: 0;
+			color: $primary
 		}
 	}
 	h2{
 		font-size: 50px;
 		font-weight: 700;
+		color: $primary;
 		span{
-			font-weight: 400;
+			font-weight: 400;			
 		}
 		@include media-breakpoint-down(sm){
 			font-size: 38px;
@@ -1495,10 +1539,25 @@ textarea.form-control {
 	width: 100%;
 	height: 300px;
 }
+.block-20::after{
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba($primary,0.7);
+	opacity:0;
+	transition:0.3s;
+  }
+  
+  .block-20:hover::after{
+	opacity:1;
+  }
 .blog-entry{
 	position: relative;
 	width: 100%;
-    flex: 1 0 10%;
+    flex: 1 0 10%;	
 	@include media-breakpoint-up(md){
 		margin-bottom: 30px;
 	}
@@ -1511,7 +1570,7 @@ textarea.form-control {
 		.heading {
 			font-size: 20px;
 			margin-bottom: 16px;
-			font-weight: 500;
+			font-weight: 500;			
 			a {
 				color: $black;
 				&:hover, &:focus, &:active {
@@ -1528,7 +1587,7 @@ textarea.form-control {
 		font-weight: 600;
 		margin-top: -15px;
 		span{
-			color: $primary;
+			color: rgba(0,0,0,.8);
 		}
 		a {
 			color: $primary;
@@ -1704,7 +1763,7 @@ textarea.form-control {
 		width: calc(100% - 100px);
 		.heading {
 			font-size: 18px;
-			font-weight: 300;
+			font-weight: 500;
 			a {
 				color: $black;
 				&:hover, &:active, &:focus {
@@ -1929,6 +1988,7 @@ textarea.form-control {
 	  border-bottom:1px solid #e5e5e5;
 	  color:black;
 	}
+	margin-bottom: 100px;
   
 	th { font-weight:600; }
   
