@@ -10519,7 +10519,8 @@ textarea.form-control {
   font-size: 11px;
 }
 .keywords a:hover {
-  border: 1px solid #000;
+  border: 1px solid #cc80ff;
+  color: #cc80ff;
 }
 
 .comment-form-wrap {

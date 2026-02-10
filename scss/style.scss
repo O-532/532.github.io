@@ -1817,7 +1817,8 @@ textarea.form-control {
 		border: 1px solid rgba(255,255,255,.2);
 		font-size :11px;
 		&:hover {
-			border: 1px solid #000;
+			border: 1px solid $primary;
+			color: $primary;
 		}
 	}
 }
