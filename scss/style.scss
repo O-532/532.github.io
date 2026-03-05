@@ -7,7 +7,7 @@ $white: #fff;
 $black: #000000;
 $darken: #232931;
 
-$primary: #cc80ff;
+$primary: #d29bff;
 $secondary: #ffff94;
 
 
@@ -2022,6 +2022,73 @@ textarea.form-control {
 	visibility: hidden;
 	transition: opacity .2s ease-out, visibility 0s linear .2s;
 	z-index:1000;
+}
+
+.project1{
+	.img-wrap {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center; 
+	a {
+		cursor: zoom-in;
+		}
+	}	  
+
+	.blueprint {
+	max-width: 1110px;   
+	width: 100%;
+	height: auto;       
+	display: block;
+	margin: 0 auto;     
+	a{
+		cursor: zoom-in;
+		}
+	}
+
+	.result{
+		.home,
+		.signup-login,
+		.options,
+		.recommendation,
+		.myplan-empty,
+		.myplan,
+		.mygroup-make,
+		.mygroup-plan,
+		.review {
+		  display: grid;
+		  gap: 20px;
+		  justify-content: start;
+		  margin-bottom: 20px;
+	  
+		  figure {
+			margin: 0;
+			a { 
+				cursor: zoom-in; display: block;
+			}		  
+			img {
+			  width: 100%;
+			  max-width: 300px;
+			  display: block;
+			}	  
+			figcaption {
+			  text-align: center;
+			  margin-top: 8px;
+			  font-size: 14px;
+			}
+		  }
+		}
+	  
+		.home { grid-template-columns: auto; }             // 1장
+		.recommendation { grid-template-columns: repeat(2, auto); } // 2장
+		.signup-login { grid-template-columns: repeat(2, auto); }   // 4장 → 2열
+		.options { grid-template-columns: repeat(3, auto); }        // 6장 → 3열
+		.myplan-empty {grid-template-columns: auto;}
+		.myplan {grid-template-columns: repeat(2, auto);}
+		.mygroup-make {grid-template-columns: repeat(3, auto); }
+		.mygroup-plan {grid-template-columns: repeat(4, auto); }
+		.review {grid-template-columns: repeat(3, auto); }
+	}
 }
 
 #ftco-loader.fullscreen {
