@@ -1758,6 +1758,21 @@ textarea.form-control {
 		height: 80px;
 		width: 80px;
 		@include border-radius(50%);
+		position: relative;
+		overflow: hidden;
+
+		&::after{
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: rgba($primary, 0.7); // primary 색 반투명
+			opacity: 0;
+			transition: opacity 0.2s ease;
+		}
+
+		&:hover::after{
+			opacity: 1;
+		}
 	}
 	.text {
 		width: calc(100% - 100px);
@@ -2060,11 +2075,16 @@ textarea.form-control {
 		  gap: 20px;
 		  justify-content: start;
 		  margin-bottom: 20px;
+		  align-items: end;
 	  
 		  figure {
 			margin: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 			a { 
-				cursor: zoom-in; display: block;
+				cursor: zoom-in; 
+				display: block;
 			}		  
 			img {
 			  width: 100%;
@@ -2081,10 +2101,10 @@ textarea.form-control {
 	  
 		.home { grid-template-columns: auto; }             // 1장
 		.recommendation { grid-template-columns: repeat(2, auto); } // 2장
-		.signup-login { grid-template-columns: repeat(2, auto); }   // 4장 → 2열
+		.signup-login { grid-template-columns: repeat(4, auto); }   
 		.options { grid-template-columns: repeat(3, auto); }        // 6장 → 3열
 		.myplan-empty {grid-template-columns: auto;}
-		.myplan {grid-template-columns: repeat(2, auto);}
+		.myplan {grid-template-columns: repeat(4, auto);}
 		.mygroup-make {grid-template-columns: repeat(3, auto); }
 		.mygroup-plan {grid-template-columns: repeat(4, auto); }
 		.review {grid-template-columns: repeat(3, auto); }

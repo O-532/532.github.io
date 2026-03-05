@@ -10469,6 +10469,19 @@ textarea.form-control {
   height: 80px;
   width: 80px;
   border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.block-21 .blog-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(210, 155, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.block-21 .blog-img:hover::after {
+  opacity: 1;
 }
 .block-21 .text {
   width: calc(100% - 100px);
@@ -10770,6 +10783,7 @@ textarea.form-control {
   gap: 20px;
   justify-content: start;
   margin-bottom: 20px;
+  align-items: end;
 }
 .project1 .result .home figure,
 .project1 .result .signup-login figure,
@@ -10781,6 +10795,9 @@ textarea.form-control {
 .project1 .result .mygroup-plan figure,
 .project1 .result .review figure {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .project1 .result .home figure a,
 .project1 .result .signup-login figure a,
@@ -10827,7 +10844,7 @@ textarea.form-control {
   grid-template-columns: repeat(2, auto);
 }
 .project1 .result .signup-login {
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(4, auto);
 }
 .project1 .result .options {
   grid-template-columns: repeat(3, auto);
@@ -10836,7 +10853,7 @@ textarea.form-control {
   grid-template-columns: auto;
 }
 .project1 .result .myplan {
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(4, auto);
 }
 .project1 .result .mygroup-make {
   grid-template-columns: repeat(3, auto);
