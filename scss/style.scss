@@ -2395,6 +2395,93 @@ textarea.form-control {
 	}
 }
 
+.project4{
+	.description{
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+		align-items: center;	  
+		a{
+		  cursor: zoom-in;	  
+		  img{
+			max-width: 600px; // 전체 사진 크기 줄이기
+			width: 100%;
+			height: auto;
+			display: block;
+		  }
+		}
+	}
+	.circuit{
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+		align-items: center;	  
+		a{
+		  cursor: zoom-in;	  
+		  img{
+			max-width: 600px; // 전체 사진 크기 줄이기
+			width: 100%;
+			height: auto;
+			display: block;
+		  }
+		}
+	}
+	.simulation{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		align-items: end;
+		figure{
+			margin: 0;
+			text-align: center;
+		}
+		a{
+			display: block;
+		}
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		figcaption{
+			margin-top: 8px;
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+	.result{
+		.picture{
+			display: flex;
+			gap: 50px;
+			justify-content: center;
+			align-items: center;	  
+			a{
+			cursor: zoom-in;	  
+			img{
+				max-width: 600px; // 전체 사진 크기 줄이기
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			}
+		}
+		.video{
+			display: flex;
+			flex-direction: column;
+			gap: 20px;			
+			a{
+			display: block;
+			}
+			img,
+			video{
+			width: 100%;
+			height: auto;
+			display: block;
+			}
+		}
+	}
+}
+
 #ftco-loader.fullscreen {
 	padding:  0;
 	left:  0;

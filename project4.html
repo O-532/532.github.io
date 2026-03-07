@@ -69,146 +69,175 @@
         <div class="row">
           <div class="col-lg-8 ftco-animate">
             <h2 class="mb-3">프로젝트 제안 설명</h2>
-            <p>&nbsp; 오디오 앰프는 저주파 신호를 증폭하는 장치로, 전자공학에서 배우는 아날로그 회로 이론과 트랜지스터 동작 원리를 적용할 수 있는 프로젝트이다. 특히, 오디오 앰프는 신호 처리 능력 또한 요구하기 때문에 신호 증폭 및 필터링 기술을 학습하고 응용할 수 있다. 따라서 오디오 앰프 설계는 전자공학의 기본 원리와 실제 응용 사이의 연결고리를 이해하는 데 매우 적합한 주제라고 판단했다.</p><br>
+            <p>&nbsp; 기초전자회로실험에서 배운 내용을 활용하여 설계 프로젝트를 진행하고자 하였기에, 커패시터와 555타이머를 활용해 주파수에 따라 다른 소리를 내는 피아노를 전자회로로 만들기로 하였다. 칼림바와 같이 작은 크기의 악기도 연주가 가능하다는 것을 보고, PCB보드에 회로를 구성하여 휴대 가능한 피아노를 만들고자 하였다.</p><br>
 
             <h2 class="mb-3 mt-5">동작 설명 및 회로도</h2>
-            <h4>-전체</h4>
-            <p><h5> &nbsp; >동작 설명</h5>
-                <div class="project2">                    
-                    <div class="circuit">               
-                        <a href="images/project_2_circuit_operation description.jpg" target="_blank">
-                            <img src="images/project_2_circuit_operation description.jpg" alt="">
-                        </a>        
-                    </div>                  
+            <h4>-동작설명</h4>
+            <p>
+              <div class="project4">                    
+                  <div class="description">               
+                      <a href="images/project_4_circuit_operation description.png" target="_blank">
+                          <img src="images/project_4_circuit_operation description.png" alt="">
+                      </a>        
+                  </div>                  
+              </div><br>
+              &nbsp; 스위치를 누르면 해당 스위치에 연결되어 있는 저항이 555 타이머 회로에 적용된다. 그러면 555 타이머는 불안정 모드로 동작하면서, 저항과 커패시터 값에 의해 결정되는 특정 주파수의 사각파 신호를 지속적으로 생성한다. 생성된 사각파 신호는 출력단을 통해 스피커로 전달되고, 스피커에서 해당 주파수에 대응하는 소리가 발생한다.
+            </p><br>
+            <p><h4>-왼손 연주부</h4>
+              <p><h5>&nbsp; >회로도</h5>
+                <div class="project4">    
+                  <div class="circuit">            
+                    <a href="images/project_4_circuit_l.png" target="_blank">
+                      <img src="images/project_4_circuit_l.png" alt="">
+                    </a>        
+                  </div>            
                 </div><br>
-                &nbsp; 오디오 파워앰프는 입력된 오디오 신호를 단계적으로 증폭하여 스피커를 구동할 수 있는 신호로 만드는 장치이다. 입력단을 통해 들어온 신호는 전압증폭단에서 전압을 높이고, 이후 전류증폭단에서 전류를 높인 뒤 출력단을 통해 스피커로 전달된다. 이렇게 증폭된 신호가 스피커를 구동하여 소리로 출력된다.
-            </p>
-            <p><h5> &nbsp; >회로도</h5>
-                <div class="project2">    
-                    <div class="circuit">            
-                        <a href="images/project_2_circuit.png" target="_blank">
-                            <img src="images/project_2_circuit.png" alt="">
-                        </a>        
-                    </div>            
+                &nbsp; 스위치를 누르면 해당 스위치에 연결된 저항이 555 타이머 회로에 적용되어, 특정 주파수의 사각파를 생성하도록 구성되었다. 생성된 신호는 스피커로 전달되어 해당 음의 소리가 발생하도록 한다. 이 회로는 왼손으로 연주하는 음을 출력하기 위한 회로이다.
+              </p>
+              <p><h5>&nbsp; >시뮬레이션</h5>
+                <div class="project4">    
+                  <div class="simulation">          
+                    <figure>  
+                      <a href="images/project_4_circuit_l_c.png" target="_blank">
+                        <img src="images/project_4_circuit_l_c.png" alt="">
+                      </a>        
+                      <figcaption>도</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_d.png" target="_blank">
+                        <img src="images/project_4_circuit_l_d.png" alt="">
+                      </a>        
+                      <figcaption>레</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_e.png" target="_blank">
+                        <img src="images/project_4_circuit_l_e.png" alt="">
+                      </a>        
+                      <figcaption>미</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_f.png" target="_blank">
+                        <img src="images/project_4_circuit_l_f.png" alt="">
+                      </a>        
+                      <figcaption>파</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_g.png" target="_blank">
+                        <img src="images/project_4_circuit_l_g.png" alt="">
+                      </a>        
+                      <figcaption>솔</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_a.png" target="_blank">
+                        <img src="images/project_4_circuit_l_a.png" alt="">
+                      </a>        
+                      <figcaption>라</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_b.png" target="_blank">
+                        <img src="images/project_4_circuit_l_b.png" alt="">
+                      </a>        
+                      <figcaption>시</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_l_cc.png" target="_blank">
+                        <img src="images/project_4_circuit_l_cc.png" alt="">
+                      </a>        
+                      <figcaption>(높은)도</figcaption>
+                    </figure>
+                  </div>            
+                </div>
+                &nbsp; PSpice를 이용하여 각 스위치별로 출력되는 주파수를 측정한 결과이다. 피아노의 음계와 동일한 것을 알 수 있다.
+              </p>
+            </p><br>
+            <p><h4>-오른손 연주부</h4>
+              <p><h5>&nbsp; >회로도</h5>
+                <div class="project4">
+                  <div class="circuit">
+                    <a href="images/project_4_circuit_r.png" target="_blank">
+                      <img src="images/project_4_circuit_r.png" alt="">
+                    </a>  
+                  </div>
                 </div><br>
-                &nbsp; 입력단을 통해 들어온 신호를, 전압증폭단에서 전압 증폭 후 전류증폭단에서 전류 증폭하여 출력단을 통해 스피커로 전달한다.
-            </p> <br>
-            <h4>-전압증폭단</h4>
-            <p><h5>&nbsp; >동작 설명</h5>
-                <div class="project2">
-                    <div class="description-v">
-                        <a href="images/project_2_circuit_operation description_v1.png" target="_blank">
-                            <img src="images/project_2_circuit_operation description_v1.png" alt="">
-                        </a>
-                        <a href="images/project_2_circuit_operation description_v2.png" target="_blank">
-                            <img src="images/project_2_circuit_operation description_v2.png" alt="">
-                        </a>
-                    </div>
-                </div><br>
-                &nbsp;  전압 증폭단은 입력된 신호의 전압을 증폭하여 신호의 세기를 높이는 단계로, 증폭된 신호가 출력단에서 충분한 전력을 생성할 수 있도록 한다. 입력 신호의 위상은 그대로 가져가면서 전압만 증폭시키기 위해 비반전 증폭기를 사용한다.
-            </p>
-            <p><h5>&nbsp; >시뮬레이션</h5>
-                <div class="project2">
-                    <div class="circuit">
-                        <a href="images/project_2_circuit_v1.png" target="_blank">
-                            <img src="images/project_2_circuit_v1.png" alt="">
-                        </a>
-                        <a href="images/project_2_blueprint_v2.png" target="_blank">
-                            <img src="images/project_2_circuit_v2.png" alt="">
-                        </a>
-                        <a href="images/project_2_circuit_v3.png" target="_blank">
-                            <img src="images/project_2_circuit_v3.png" alt="">
-                        </a>
-                    </div>
-                </div><br>
-                &nbsp; PSpice를 이용한 시뮬레이션 결과이다. 전압 측정 결과, 입력 전압은 약 0.1V, 출력 전압은 약 5V로 전압 이득이 약 50인 것을 알 수 있다.
-                <p>0.1V 입력 → 5V 출력 ⇒ Gain 50</p>
-            </p> <br> 
-            <h4>전류증폭단</h4>
-            <p><h5>&nbsp; >동작 설명</h5>
-                <div class="project2">
-                    <div class="circuit">
-                        <a href="images/project_2_circuit_operation description_i.png" target="_blank">
-                            <img src="images/project_2_circuit_operation description_i.png" alt="">
-                        </a>
-                    </div>
-                </div><br>
-                &nbsp; 전류 증폭단 전압 증폭단에서 증폭된 신호를 받아, 전류를 증폭하여 스피커에 필요한 충분한 전력을 공급하는 단계이다. 이 단계는 주로 출력단에서 이루어지며, 스피커를 구동하기 위해 높은 전류를 제공한다. 입력의 반 주기는 선형영역에서 동작하고, 나머지 반 주기는 차단영역에서 동작하게 하는 class B 증폭기를 사용한다. 그리고 동일한 트랜지스터를 쌍으로 사용하여 차단되는 반주기를 얻는다.
-            </p>          
-            <p><h5>&nbsp; >시뮬레이션</h5>
-                <div class="project2">
-                    <div class="circuit">
-                        <a href="images/project_2_circuit_i1.png" target="_blank">
-                            <img src="images/project_2_circuit_i1.png" alt="">
-                        </a>
-                        <a href="images/project_2_circuit_i2.png" target="_blank">
-                            <img src="images/project_2_circuit_i2.png" alt="">
-                        </a>
-                        <a href="images/project_2_circuit_i3.jpg" target="_blank">
-                            <img src="images/project_2_circuit_i3.jpg" alt="">
-                        </a>
-                    </div>
-                </div><br>
-                &nbsp; PSpice를 이용한 시뮬레이션 결과이다. 전류 측정 결과, 입력 전류는 약 121uA, 출력 전류는 약 5mA로 전류가 약 41배 증폭된 것을 알 수 있다.
-                <p>121uA → 5mA ⇒ 41배 전류 증폭</p>
-            </p> <br>
+                &nbsp; 스위치를 누르면 해당 스위치에 연결된 저항이 555 타이머 회로에 적용되어, 특정 주파수의 사각파를 생성하도록 구성되었다. 생성된 신호는 스피커로 전달되어 해당 음의 소리가 발생하도록 한다. 이 회로는 오른손으로 연주하는 음을 출력하기 위한 회로이다.
+              </p>   
+              <p><h5>&nbsp; >시뮬레이션</h5>
+                <div class="project4">    
+                  <div class="simulation">          
+                    <figure>  
+                      <a href="images/project_4_circuit_r_c.png" target="_blank">
+                        <img src="images/project_4_circuit_r_c.png" alt="">
+                      </a>        
+                      <figcaption>도</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_d.png" target="_blank">
+                        <img src="images/project_4_circuit_r_d.png" alt="">
+                      </a>        
+                      <figcaption>레</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_e.png" target="_blank">
+                        <img src="images/project_4_circuit_r_e.png" alt="">
+                      </a>        
+                      <figcaption>미</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_f.png" target="_blank">
+                        <img src="images/project_4_circuit_r_f.png" alt="">
+                      </a>        
+                      <figcaption>파</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_g.png" target="_blank">
+                        <img src="images/project_4_circuit_r_g.png" alt="">
+                      </a>        
+                      <figcaption>솔</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_a.png" target="_blank">
+                        <img src="images/project_4_circuit_r_a.png" alt="">
+                      </a>        
+                      <figcaption>라</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_b.png" target="_blank">
+                        <img src="images/project_4_circuit_r_b.png" alt="">
+                      </a>        
+                      <figcaption>시</figcaption>
+                    </figure>
+                    <figure>  
+                      <a href="images/project_4_circuit_r_cc.png" target="_blank">
+                        <img src="images/project_4_circuit_r_cc.png" alt="">
+                      </a>        
+                      <figcaption>(높은)도</figcaption>
+                    </figure>
+                  </div>            
+                </div>
+                &nbsp; PSpice를 이용하여 각 스위치별로 출력되는 주파수를 측정한 결과이다. 피아노의 음계와 동일한 것을 알 수 있다.
+              </p>           
+            </p> <br>            
             
             <h2 class="mb-3 mt-5">결과</h2>
-            <div class="project2">
-             <p><h4>-전압증폭</h4>
+            <div class="project4">
+             <p><h4>-결과물 사진</h4>
                 <div class="result">
-                  <div class="volt">                             
-                    <figure>
-                      <a href="images/project_2_video_capture1.png" target="_blank">
-                        <img src="images/project_2_video_capture1.png" alt="">
-                      </a>
-                      <figcaption>전압 측정</figcaption>
-                    </figure>
-                     <figure>
-                      <a href="images/project_2_video_capture2.png" target="_blank">
-                        <img src="images/project_2_video_capture2.png" alt="">
-                      </a>
-                      <figcaption>오실로스코프 화면</figcaption>
-                    </figure>               
+                  <div class="picture">                            
+                    <a href="images/project_4_picture.png" target="_blank">
+                      <img src="images/project_4_picture.png" alt="">
+                    </a>                                                    
                   </div>
                 </div>
-                &nbsp; 아래 결과물 영상의 캡쳐본으로, 오실로스코프를 이용해 전압을 측정한 사진이다. 입력전압이 265mV, 출력전압이 14.05V로 전압이득이 약 53인 것을 확인할 수 있다.
+                &nbsp; 브레드보드에 실험하여 성공한 후, PCB 보드에 회로를 다시 구성하여 납땜한 사진이다. 위쪽이 왼손 연주부, 아래쪽이 오른손 연주부이며, 외쪽부터 오른쪽 순으로 도 -> 레 -> 미 -> 파 -> 솔 -> 라 -> 시 -> (높은)도 이다.
               </p><br>
               <p><h4>-결과물 영상</h4>
                 <div class="result">    
                     <div class="video">                       
-                        <a href="images/project_2_video.mp4" target="_blank">
-                            <video src="images/project_2_video.mp4" alt=""> </video>
-                        </a>
+                      <video src="images/project_4_video.mp4" controls></video>
                     </div>                                                         
                 </div><br>
-                &nbsp; 최종 완성된 오디오 앰프로 음악을 재생하는 영상이다. QWER의 '고민중독'을 선곡했다. 동시에 오실로스코프로 측정한 전압을 확인해보면 전압 이득이 약 50인 것을 확인할 수 있다.                
-              </p><br>
-              <p><h4>-결과물 사진</h4>
-                <div class="result">
-                  <div class="picture">   
-                    <figure>             
-                      <a href="images/project_2_picture_v.jpg" target="_blank">
-                        <img src="images/project_2_picture_v.jpg" alt="">
-                      </a>
-                      <figcaption>전압 증폭단</figcaption>
-                    </figure>
-                    <figure>
-                      <a href="images/project_2_picture_i.jpg" target="_blank">
-                        <img src="images/project_2_picture_i.jpg" alt="">
-                      </a>
-                      <figcaption>전류 증폭단</figcaption>
-                    </figure>
-                    <figure>
-                      <a href="images/project_2_picture0.jpg" target="_blank">
-                        <img src="images/project_2_picture0.jpg" alt="">
-                      </a>
-                      <figcaption>전체</figcaption>
-                    </figure>                                                
-                  </div>
-                </div>
-                &nbsp; 브레드보드에 완성한 사진이다. 납땜 과정은 생략했다.
-              </p><br>              
+                &nbsp; 최종 완성된 전자 피아노를 연주한 영상이다. 왼손 연주부와 오른손 연주부 모두 각 스위치별로 소리가 알맞게 잘 출력되는 것을 확인할 수 있다.             
+              </p><br>                    
             </div><br>
           </div> <!-- .col-md-8 -->
 
@@ -216,17 +245,12 @@
             <div class="sidebar-box ftco-animate">
             	<h3 class="heading-sidebar">Keyword</h3>
               <div class="keywords">
-                <a href="https://www.google.com/search?q=조건입력기반" target="_blank">#조건입력기반</a>
-                <a href="https://www.google.com/search?q=frontend" target="_blank">#frontend</a>
-                <a href="https://www.google.com/search?q=React" target="_blank">#React</a>
-                <a href="https://www.google.com/search?q=State Management" target="_blank">#StateManagement</a>
-                <a href="https://www.google.com/search?q=HTML" target="_blank">#HTML</a>
-                <a href="https://www.google.com/search?q=CSS" target="_blank">#CSS</a>
-                <a href="https://www.google.com/search?q=JavaScript " target="_blank">#JavaScript</a>
-                <a href="https://www.google.com/search?q=UI/UX" target="_blank">#UIUX</a>
-                <a href="https://www.google.com/search?q=API" target="_blank">#API</a>                
-                <a href="https://www.google.com/search?q=Docker" target="_blank">#Docker</a>
-                <a href="https://www.google.com/search?q=백엔드 연동" target="_blank">#백엔드연동</a>                
+                <a href="https://www.google.com/search?q=전자피아노" target="_blank">#전자피아노</a>
+                <a href="https://www.google.com/search?q=555타이머" target="_blank">#555타이머</a>
+                <a href="https://www.google.com/search?q=커패시터" target="_blank">#커패시터</a>
+                <a href="https://www.google.com/search?q=주파수" target="_blank">#주파수</a>
+                <a href="https://www.google.com/search?q=AstableMode" target="_blank">#AstableMode</a>
+                <a href="https://www.google.com/search?q=사각파" target="_blank">#사각파</a>               
               </div>
             </div>      
 
@@ -269,7 +293,7 @@
 
             <div class="sidebar-box ftco-animate">
               <h3 class="heading-sidebar">Paragraph</h3>
-              <p>&nbsp; 본 프로젝트는 '조건 입력 기반 여행지 추천 웹사이트'의 프론트엔드 설계 및 구현 과정을 다룬다. 사용자가 입력한 다양한 조건(여행 도시, 인원, 동행인, 활동 등)에 따라 추천 모델과 연동하여 여행지를 추천하고, 추천 결과를 출력하는 웹사이트의 사용자 인터페이스를 React를 활용하여 구현하였다. 추천 결과를 백엔드와 연동하여 일정으로 저장하고 관리하며, 그룹 단위로 공유하고, 여행지별 리뷰를 남길 수 있는 기능을 제공한다.</p>
+              <p>&nbsp; 본 프로젝트는 기초전자회로실험에서 배운 내용을 활용하고자 했기에, 커패시터와 555타이머를 활용하여 주파수에 따라 다른 소리를 내는 전자 피아노를 만들었다.</p>
             </div>
           </div>
         </div>

@@ -11133,6 +11133,89 @@ textarea.form-control {
   font-size: 14px;
 }
 
+.project4 .description {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.project4 .description a {
+  cursor: zoom-in;
+}
+.project4 .description a img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project4 .circuit {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.project4 .circuit a {
+  cursor: zoom-in;
+}
+.project4 .circuit a img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project4 .simulation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: end;
+}
+.project4 .simulation figure {
+  margin: 0;
+  text-align: center;
+}
+.project4 .simulation a {
+  display: block;
+}
+.project4 .simulation img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project4 .simulation figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+.project4 .result .picture {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.project4 .result .picture a {
+  cursor: zoom-in;
+}
+.project4 .result .picture a img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project4 .result .video {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project4 .result .video a {
+  display: block;
+}
+.project4 .result .video img,
+.project4 .result .video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 #ftco-loader.fullscreen {
   padding: 0;
   left: 0;
