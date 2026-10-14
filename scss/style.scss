@@ -2503,7 +2503,57 @@ textarea.form-control {
 		  }
 		}
 	}
-	
+	.circuit{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+		margin-bottom: 20px;
+		align-items: end;
+		figure{
+			margin: 0;
+		}
+		a{
+			display: block;
+			cursor: zoom-in;
+		}
+		img{
+			width: 70%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.result{
+		.picture{
+			display: flex;
+			gap: 50px;
+			justify-content: center;
+			align-items: center;	  
+			a{
+			cursor: zoom-in;	  
+			img{
+				max-width: 600px; // 전체 사진 크기 줄이기
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			}
+		}
+		.video{
+			display: flex;
+			flex-direction: column;
+			gap: 20px;			
+			a{
+			display: block;
+			}
+			img,
+			video{
+			width: 100%;
+			height: auto;
+			display: block;
+			}
+		}
+	}	
 }
 
 #ftco-loader.fullscreen {

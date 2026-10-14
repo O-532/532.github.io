@@ -11216,6 +11216,71 @@ textarea.form-control {
   display: block;
 }
 
+.project5 .description {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.project5 .description a {
+  cursor: zoom-in;
+}
+.project5 .description a img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project5 .circuit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: end;
+}
+.project5 .circuit figure {
+  margin: 0;
+}
+.project5 .circuit a {
+  display: block;
+  cursor: zoom-in;
+}
+.project5 .circuit img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.project5 .result .picture {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.project5 .result .picture a {
+  cursor: zoom-in;
+}
+.project5 .result .picture a img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project5 .result .video {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project5 .result .video a {
+  display: block;
+}
+.project5 .result .video img,
+.project5 .result .video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 #ftco-loader.fullscreen {
   padding: 0;
   left: 0;
