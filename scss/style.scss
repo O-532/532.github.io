@@ -2487,6 +2487,25 @@ textarea.form-control {
 	}
 }
 
+.project5{
+	.description{
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+		align-items: center;	  
+		a{
+		  cursor: zoom-in;	  
+		  img{
+			max-width: 600px; // 전체 사진 크기 줄이기
+			width: 100%;
+			height: auto;
+			display: block;
+		  }
+		}
+	}
+	
+}
+
 #ftco-loader.fullscreen {
 	padding:  0;
 	left:  0;

@@ -11220,6 +11220,22 @@ textarea.form-control {
   display: block;
 }
 
+.project5 .description {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.project5 .description a {
+  cursor: zoom-in;
+}
+.project5 .description a img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 #ftco-loader.fullscreen {
   padding: 0;
   left: 0;
